@@ -1,0 +1,124 @@
+.error-page, .error-page-inner {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-preferred-size: 0%;
+  flex-basis: 0%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+.error-page-inner {
+  width: 100%;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative
+}
+
+.error-page header {
+  background: transparent
+}
+
+.error-page .main-content-wrapper {
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.error-page .error-page-message {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  cursor: -webkit-grab;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  cursor: grab;
+  border-radius: 2px
+}
+
+.error-page .error-page-message:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing
+}
+
+.error-page .error-message {
+  color: #14ba14;
+  font-size: 3rem;
+  font-weight: 300
+}
+
+@media (min-width: 48rem) {
+  .error-page .error-message {
+    font-size: 4rem;
+    padding: 1rem 0
+  }
+}
+
+.error-page .loader-modal-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  overflow: visible;
+  width: 100%;
+  max-width: 100%
+}
+
+.error-page .balloon-animated-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 120px;
+  transform-origin: bottom;
+  cursor: -webkit-grab;
+  cursor: grab
+}
+
+.error-page .balloon-animated-wrapper:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing
+}
+
+@media (min-width: 48rem) {
+  .error-page .balloon-animated-wrapper {
+    height: 180px;
+    width: 180px
+  }
+}
+
+.error-page .balloon {
+  height: 100%;
+  width: 100%;
+  background-image: url('../public/images/balloon.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: float 3.5s infinite ease-in-out .1s;
+  animation-direction: alternate;
+  transform-origin: center top;
+  -webkit-user-select: none
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 2px, 0) scale(1.02) rotate(-2deg)
+  }
+  to {
+    transform: translate3d(0, -12px, 0) scale(.98) rotate(2deg)
+  }
+}

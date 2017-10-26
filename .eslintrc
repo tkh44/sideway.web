@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-flow"
+  ],
+  "globals": {
+    "React": false,
+    "__DEVTOOLS__": false,
+    "__DEVELOPMENT__": false,
+    "__TEST__": false,
+    "__PROD__": false,
+    "Headers": false,
+    "Request": false,
+    "fetch": false
+  }
+}

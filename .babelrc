@@ -1,0 +1,87 @@
+{
+  "plugins": [
+    "syntax-flow",
+    "transform-object-rest-spread",
+    "transform-class-properties"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": true
+            }
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "transform-object-rest-spread",
+        "transform-class-properties"
+      ]
+    },
+    "development": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "chrome": 55,
+              "safari": 10,
+              "ios": 10
+            },
+            "modules": false,
+            "loose": true
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        [
+          "transform-runtime",
+          {
+            "helpers": false,
+            "polyfill": false,
+            "regenerator": true
+          }
+        ],
+        ["lodash", { id: ["lodash", "recompose"] }]
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "chrome": 55,
+              "safari": 10,
+              "ios": 10
+            },
+            "modules": false,
+            "loose": true
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "transform-es2015-computed-properties",
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        [
+          "transform-runtime",
+          {
+            "helpers": false,
+            "polyfill": false,
+            "regenerator": true
+          }
+        ],
+        ["lodash", { id: ["lodash", "recompose"] }]
+      ]
+    }
+  }
+}

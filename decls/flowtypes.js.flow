@@ -1,0 +1,43 @@
+declare module 'react-motion' {
+  declare module.exports: any
+}
+
+declare module 'redux-actions' {
+  declare module.exports: any
+}
+
+declare module 'lodash' {
+  declare module.exports: any
+}
+
+declare module 'react-textarea-autosize' {
+  declare type DefaultProps = {
+    onChange: Function,
+    onHeightChange: Function,
+    useCacheForDOMMeasurements: boolean
+  }
+
+  declare type Props = {
+    value: string,
+    onChange: (event: Event) => mixed,
+    onHeightChange: (height: number) => mixed,
+    useCacheForDOMMeasurements: boolean,
+    rows?: number,
+    minRows?: number,
+    maxRows?: number
+  }
+
+  declare class TextareaAutosize extends React$Component {
+    static defaultProps: DefaultProps;
+    props: Props;
+    focus(): void;
+    blur(): void;
+    _resizeComponent(): void;
+  }
+  declare var exports: typeof TextareaAutosize;
+}
+
+declare type Action = {
+  action: string,
+  payload: string | Object
+}

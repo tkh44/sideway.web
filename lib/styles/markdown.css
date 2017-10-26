@@ -1,0 +1,186 @@
+.markdown-page {
+  font-weight: 400;
+  font-size: .95625rem;
+  line-height: 1.4;
+  padding: .5rem;
+  word-wrap: break-word
+}
+
+.markdown-page h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem
+}
+
+.markdown-page h2 {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.25
+}
+
+.markdown-page h3 {
+  font-weight: 400;
+  font-size: 1.40625rem;
+  line-height: 1.75rem
+}
+
+.markdown-page h1, .markdown-page h2, .markdown-page h3, .markdown-page h4, .markdown-page h5 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+  font-weight: 700
+}
+
+.markdown-page ol, .markdown-page ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+.markdown-page blockquote, .markdown-page dl, .markdown-page ol, .markdown-page p, .markdown-page pre, .markdown-page table, .markdown-page ul {
+  margin-top: 0;
+  margin-bottom: 16px
+}
+
+.markdown-page a {
+  color: #14ba14;
+  text-decoration: none
+}
+
+.markdown-page a:active, .markdown-page a:hover {
+  text-decoration: underline;
+  outline-width: 0
+}
+
+.markdown-page ol ol, .markdown-page ul ol {
+  list-style-type: lower-roman
+}
+
+.markdown-page ol ol ol, .markdown-page ol ul ol, .markdown-page ul ol ol, .markdown-page ul ul ol {
+  list-style-type: lower-alpha
+}
+
+.markdown-page ol, .markdown-page ul {
+  padding-left: 2em
+}
+
+.markdown-page ol ol, .markdown-page ol ul, .markdown-page ul ol, .markdown-page ul ul {
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+.markdown-page li > p {
+  margin-top: 16px
+}
+
+.markdown-page li + li {
+  margin-top: .25rem
+}
+
+.markdown-page dl {
+  padding: 0
+}
+
+.markdown-page dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700
+}
+
+.markdown-page dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px
+}
+
+.markdown-page table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all
+}
+
+.markdown-page table th {
+  font-weight: 700
+}
+
+.markdown-page table td, .markdown-page table th {
+  padding: 6px 13px;
+  border: 1px solid #ddd
+}
+
+.markdown-page table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc
+}
+
+.markdown-page table tr:nth-child(2n) {
+  background-color: #f8f8f8
+}
+
+.markdown-page img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff
+}
+
+.markdown-page code {
+  padding: 0;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, .04);
+  border-radius: 3px
+}
+
+.markdown-page code:after, .markdown-page code:before {
+  letter-spacing: -.2rem;
+  content: "\A0"
+}
+
+.markdown-page pre {
+  word-wrap: normal
+}
+
+.markdown-page pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0
+}
+
+.markdown-page pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px
+}
+
+.markdown-page pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0
+}
+
+.markdown-page pre code:after, .markdown-page pre code:before {
+  content: normal
+}
+
+.markdown-page hr {
+  border-bottom-color: #eee
+}

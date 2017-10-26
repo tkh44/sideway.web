@@ -1,0 +1,41 @@
+.background-container:after, .background-container:before {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  max-height: 680px;
+  content: ' ';
+  z-index: -3
+}
+
+.background-container.field:before {
+  right: calc(50vh * 844 / 680 - 1px);
+  background-image: url('../public/images/bg/field.jpg');
+  background-position: bottom 0 right;
+  background-repeat: repeat-x;
+  background-size: auto 100%
+}
+
+.background-container.field:after {
+  right: 0;
+  background-size: auto 100%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('../public/images/bg/path.png')
+}
+
+.background-container.harvest:before {
+  right: 0;
+  background-image: url('../public/images/bg/harvest-tile.png');
+  background-position: bottom 0 right;
+  background-repeat: repeat-x;
+  background-size: auto 100%
+}
+
+.background-container.harvest:after {
+  right: 0;
+  background-size: auto 100%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('../public/images/bg/harvest-right.png')
+}
