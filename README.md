@@ -6,5 +6,10 @@ This code will not run in any meaningful manner on its own and I have not tested
 
 Development started in November of 2015 and ended around March 2017.
 
+#### Bundle Buddy Output
+
+https://bundle-buddy.firebaseapp.com/
+
+
 
 Copyright (C) 2015-2017 Sideway Inc
